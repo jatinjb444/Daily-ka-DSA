@@ -14,7 +14,7 @@ class Solution {
                 st.pop();
             }
         ans[i] = st.empty() ? -1 : st.top();
-          if(i > 0 && mpp[arr[i]] > mpp[arr[i - 1]])  st.push(arr[i]);
+           st.push(arr[i]);
         }
         return ans;
     }
