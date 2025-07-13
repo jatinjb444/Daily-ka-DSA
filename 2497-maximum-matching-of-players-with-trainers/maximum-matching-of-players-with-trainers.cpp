@@ -12,7 +12,7 @@ public:
                if(l <= n1) l++;
                if(r <= n2) r++;
             }
-            else if(r >= 0) r++;
+            else if(r <= n2) r++;
         }
         return cnt;
     }
