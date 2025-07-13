@@ -9,10 +9,10 @@ public:
         while(l < n1 && r < n2){
             if(players[l] <= trainers[r]) {
                 cnt++;
-               if(l <= n1) l++;
-               if(r <= n2) r++;
+               if(l < n1) l++;
+               if(r < n2) r++;
             }
-            else if(r <= n2) r++;
+            else if(r < n2) r++;
         }
         return cnt;
     }
